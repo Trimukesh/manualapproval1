@@ -18,7 +18,7 @@ jobs:
 
     - name: Manual Approval
       if: github.event_name == 'push'
-      uses: peter-evans/manual-approval@v2
+      uses: trstringer/manual-approval@v1
       with:
         message: 'Please approve the deployment'
         reviewers: 'steja6872'
